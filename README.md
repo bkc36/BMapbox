@@ -106,7 +106,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1hgZgSVSRaqQaNzM6PEISdeZvSCEIPQSN8_DSlzJJnKc/gviz/tq?tqx=out:csv&sheet=SFplaces',
+        url:'https://docs.google.com/spreadsheets/d/1hgZgSVSRaqQaNzM6PEISdeZvSCEIPQSN8_DSlzJJnKc/gviz/tq?tqx=out:csv&sheet=SFplaces',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
